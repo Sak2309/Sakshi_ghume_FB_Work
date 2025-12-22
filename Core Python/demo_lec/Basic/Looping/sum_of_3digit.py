@@ -1,0 +1,10 @@
+n = int(input("enter the no u want separat it : "))
+temp = n
+sum = 0
+while(n != 0):
+    d = n % 10
+    n = n // 10
+    sum = sum + d
+    print(f"d ={d}")
+    print(f" sum = {sum}")
+   # print(f"n ={n}")
