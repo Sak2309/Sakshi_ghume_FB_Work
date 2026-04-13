@@ -35,14 +35,11 @@ def login():
         return render_template("login.html")
     else:
         uname = request.form.get("uname")
-    pwd = request.form.get("pwd")
+        pwd = request.form.get("pwd")
     if uname == 'sakshi' and pwd == '12345':
         return "Login successful"
     else:
         return "Login failed"
-
-    
-    
-
+        
 if(__name__ == "__main__"):
     app.run() #start the server
